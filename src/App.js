@@ -1,5 +1,6 @@
 import './App.css';
 import Book from './components/Book';
+import BookList from './pages/BookList';
 import FormBook from './pages/FormBook';
 
 export default function App() {
@@ -14,7 +15,7 @@ export default function App() {
 
   return (
     <div>
-      <FormBook />
+      {/* <FormBook />
       <h1>Livros</h1>
 
       {
@@ -22,7 +23,8 @@ export default function App() {
           console.log(element.title)
           return <Book key={element.id} title={element.title} />
         })
-      }
+      } */}
+      <BookList></BookList>
     </div>
   )
 };
